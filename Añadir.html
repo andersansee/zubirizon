@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Instrumentos</title>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <script src="js/zubirison.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Ofertas del Mes</h1>
+            <table id="display">
+                    <tr>
+                        <td><label>Product Name: </label></td>
+                        <td><input type="text" id="name" placeholder="Insert product name"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Product Description: </label></td>
+                        <td><textarea cols="50" rows= 5 id="description"></textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Product Price: </label></td>
+                        <td><input type="password" id="price" onkeypress="chequear_enter(event)"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Previous Discount: </label></td>
+                        <td><input type="password" id="discount" onkeypress="chequear_enter(event)"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Add Product Image: </label></td><td colspan="2"><input type="button" value="Browse..." onclick="Browse()"/> No file selected.</td>
+                        <input type="file" id="fileInput" style="display: none;"/>
+                    </tr>
+                  
+                    
+
+            </table>
+            <div class="botones">
+                <input type="button" value="Add product" onclick="addproduct()"/>
+                <input type="button" value="Log out" onclick="logout()"/>
+            </div>
+            <h1>Products list</h1>
+
+            <table id="display">
+
+            </table>
+            <div class="botones">
+                <input type="button" value="Log out" onclick="logout()"/>
+            </div>
+        </div>
+
+        <script>
+            print_instrumentos();
+        </script>
+        
+    </body>
+</html>
+

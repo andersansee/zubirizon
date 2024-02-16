@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instrumentos - Login</title>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <script src="js/zubirison.js"></script>
+    </head>
+    <body>
+        <div id="container_login">
+            <table>
+                <tr>
+                    <td><label>Usuario</label></td>
+                    <td><input type="text" placeholder="Tu usuario" id="usuario"/></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" placeholder="Tu password" id="password" onkeypress="chequear_enter(event)"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Log in" onclick="login()"/></td>
+                </tr>
+                </table>
+        </div>
+        
+    </body>
+</html>
